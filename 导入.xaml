@@ -1,0 +1,523 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="导入" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1871,4565" sap2010:WorkflowViewState.IdRef="导入_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="导入" sap:VirtualizedContainerService.HintSize="804,4500" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="762,4412" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_read" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="读取配置表" sap:VirtualizedContainerService.HintSize="700,199" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ReadRange AddHeaders="True" DataTable="[dt_read]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="输出文档\合并后文档.xlsx">
+          <ui:ReadRange.Range>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ui:ReadRange.Range>
+        </ui:ReadRange>
+      </Sequence>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_read]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="700,4062" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="666,3872" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard sap2010:Annotation.AnnotationText="通过配置表导入数据，通常用于补全Draft页" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: 创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki" sap:VirtualizedContainerService.HintSize="624,3719" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V2" WindowResize="Maximize">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,3429" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="get_text" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="写入txt" sap:VirtualizedContainerService.HintSize="548,2097" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[CurrentRow(7).ToString=&quot;四不像&quot;]" DisplayName="漫画页项" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="If_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="{}{{漫画页顶}}" UseDefaultEncoding="False" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="452,722" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[CurrentRow(7).ToString=&quot;天禄&quot;]" sap:VirtualizedContainerService.HintSize="410,634" sap2010:WorkflowViewState.IdRef="If_2">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="{}{{漫画页顶|天禄}}" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="{}{{漫画页顶|辟邪}}" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <If Condition="[CurrentRow(11).ToString=&quot;神兽饲养&quot;]" DisplayName="神兽饲养" sap:VirtualizedContainerService.HintSize="486,409" sap2010:WorkflowViewState.IdRef="If_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="{}{{神兽饲养页顶}}" UseDefaultEncoding="False" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_17" />
+                          </If.Else>
+                        </If>
+                        <If Condition="[NOT CurrentRow(12).ToString =&quot;-1&quot;]" sap:VirtualizedContainerService.HintSize="486,409" sap2010:WorkflowViewState.IdRef="If_7">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[&quot;{{刀|&quot;+CurrentRow(12).ToString+&quot;}}&quot;]" UseDefaultEncoding="False" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_26" />
+                          </If.Else>
+                        </If>
+                        <If Condition="[cint(CurrentRow(0).ToString)&lt;=414]" sap:VirtualizedContainerService.HintSize="486,1019" sap2010:WorkflowViewState.IdRef="If_5">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="300,113" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[not CurrentRow(14).ToString = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="258,25" sap2010:WorkflowViewState.IdRef="If_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="漫画信息框" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[&quot;{{漫画信息框 &#xD;&#xA;|color=&quot;+CurrentRow(8).ToString+&quot;&#xD;&#xA;|title_weibo=&quot;+CurrentRow(3).ToString+&quot; &#xD;&#xA;|title_bili=&quot;+CurrentRow(4).ToString+&quot; &#xD;&#xA;|number=&quot;+CurrentRow(0).ToString+&quot;&#xD;&#xA;|episode=&quot;+CurrentRow(11).ToString+&quot;篇  &#xD;&#xA;|date_weibo=&quot;+CurrentRow(1).ToString+&quot;&#xD;&#xA;|date_bili=&quot;+CurrentRow(2).ToString+&quot;&#xD;&#xA;}}&#xD;&#xA;{{cquote|待补充|旁白}}&#xD;&#xA;'''&quot;+CurrentRow(4).ToString+&quot;'''是[[有兽焉]]漫画的第&quot;+CurrentRow(0).ToString+&quot;话。它于&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(2)+&quot;日在微博正式发布，并于&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(2)+&quot;日在哔哩哔哩漫画与其他414话一并上线。&#xD;&#xA;==漫画链接==&#x9;&#xD;&#xA;{{漫画链接|wblink=&quot;+CurrentRow(5).ToString+&quot;|bmlink=&quot;+CurrentRow(6).ToString+&quot;}}&#xD;&#xA;==概要==&#x9;&#xD;&#xA;===&quot;+CurrentRow(9).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;===&quot;+CurrentRow(10).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;==出场==&#xD;&#xA;===角色===&#xD;&#xA;{{出场角色列表|&quot;+CurrentRow(0).ToString+&quot;}}&#x9;&#xD;&#xA;===地点===&#xD;&#xA;==你知道吗？==&#xD;&#xA;===文化参考===&#xD;&#xA;====标题化用====&#xD;&#xA;{{标题化用|&quot;+CurrentRow(17).ToString+&quot;|&quot;+CurrentRow(15).ToString+&quot;|&quot;+CurrentRow(16).ToString+&quot;|&quot;+CurrentRow(14).ToString+&quot;}}&#xD;&#xA;===设定===&#xD;&#xA;===轶事===&#xD;&#xA;==注释==&#x9;&#xD;&#xA;{{notefoot}}&#xD;&#xA;==参考资料==&#xD;&#xA;{{reflist}}&#xD;&#xA;{{-}}&#xD;&#xA;{{漫画总导航}}&#xD;&#xA;&quot;]" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="漫画信息框" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[&quot;{{漫画信息框 &#xD;&#xA;|color=&quot;+CurrentRow(8).ToString+&quot;&#xD;&#xA;|title_weibo=&quot;+CurrentRow(3).ToString+&quot; &#xD;&#xA;|title_bili=&quot;+CurrentRow(4).ToString+&quot; &#xD;&#xA;|number=&quot;+CurrentRow(0).ToString+&quot;&#xD;&#xA;|episode=&quot;+CurrentRow(11).ToString+&quot;篇  &#xD;&#xA;|date_weibo=&quot;+CurrentRow(1).ToString+&quot;&#xD;&#xA;|date_bili=&quot;+CurrentRow(2).ToString+&quot;&#xD;&#xA;}}&#xD;&#xA;{{cquote|待补充|旁白}}&#xD;&#xA;'''&quot;+CurrentRow(4).ToString+&quot;'''是[[有兽焉]]漫画的第&quot;+CurrentRow(0).ToString+&quot;话。它于&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(2)+&quot;日在微博正式发布，并于&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(2)+&quot;日在哔哩哔哩漫画与其他414话一并上线。&#xD;&#xA;==漫画链接==&#x9;&#xD;&#xA;{{漫画链接|wblink=&quot;+CurrentRow(5).ToString+&quot;|bmlink=&quot;+CurrentRow(6).ToString+&quot;}}&#xD;&#xA;==概要==&#x9;&#xD;&#xA;===&quot;+CurrentRow(9).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;===&quot;+CurrentRow(10).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;==出场==&#xD;&#xA;===角色===&#xD;&#xA;{{出场角色列表|&quot;+CurrentRow(0).ToString+&quot;}}&#x9;&#xD;&#xA;===地点===&#xD;&#xA;==你知道吗？==&#xD;&#xA;===设定===&#xD;&#xA;===轶事===&#xD;&#xA;==注释==&#x9;&#xD;&#xA;{{notefoot}}&#xD;&#xA;==参考资料==&#xD;&#xA;{{reflist}}&#xD;&#xA;{{-}}&#xD;&#xA;{{漫画总导航}}&#xD;&#xA;&quot;]" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="452,722" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[not CurrentRow(14).ToString = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="410,634" sap2010:WorkflowViewState.IdRef="If_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="漫画信息框" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;{{漫画信息框 &#xD;&#xA;|color=&quot;+CurrentRow(8).ToString+&quot;&#xD;&#xA;|title_weibo=&quot;+CurrentRow(3).ToString+&quot; &#xD;&#xA;|title_bili=&quot;+CurrentRow(4).ToString+&quot; &#xD;&#xA;|number=&quot;+CurrentRow(0).ToString+&quot;&#xD;&#xA;|episode=&quot;+CurrentRow(11).ToString+&quot;篇  &#xD;&#xA;|date_weibo=&quot;+CurrentRow(1).ToString+&quot;&#xD;&#xA;|date_bili=&quot;+CurrentRow(2).ToString+&quot;&#xD;&#xA;}}&#xD;&#xA;{{cquote|待补充|旁白}}&#xD;&#xA;'''&quot;+CurrentRow(4).ToString+&quot;'''是[[有兽焉]]漫画的第&quot;+CurrentRow(0).ToString+&quot;话。它于&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(2)+&quot;日作为付费章节在哔哩哔哩漫画发布，并于&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(2)+&quot;日在微博正式发布。&#xD;&#xA;==漫画链接==&#x9;&#xD;&#xA;{{漫画链接|wblink=&quot;+CurrentRow(5).ToString+&quot;|bmlink=&quot;+CurrentRow(6).ToString+&quot;}}&#xD;&#xA;==概要==&#x9;&#xD;&#xA;===&quot;+CurrentRow(9).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;===&quot;+CurrentRow(10).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;==出场==&#xD;&#xA;===角色===&#xD;&#xA;{{出场角色列表|&quot;+CurrentRow(0).ToString+&quot;}}&#x9;&#xD;&#xA;===地点===&#xD;&#xA;==你知道吗？==&#xD;&#xA;===文化参考===&#xD;&#xA;====标题化用====&#xD;&#xA;{{标题化用|&quot;+CurrentRow(17).ToString+&quot;|&quot;+CurrentRow(15).ToString+&quot;|&quot;+CurrentRow(16).ToString+&quot;|&quot;+CurrentRow(14).ToString+&quot;}}&#xD;&#xA;===设定===&#xD;&#xA;===轶事===&#xD;&#xA;==注释==&#x9;&#xD;&#xA;{{notefoot}}&#xD;&#xA;==参考资料==&#xD;&#xA;{{reflist}}&#xD;&#xA;{{-}}&#xD;&#xA;{{漫画总导航}}&#xD;&#xA;&quot;]" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,225" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendLine File="{x:Null}" DisplayName="漫画信息框" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[&quot;{{漫画信息框 &#xD;&#xA;|color=&quot;+CurrentRow(8).ToString+&quot;&#xD;&#xA;|title_weibo=&quot;+CurrentRow(3).ToString+&quot; &#xD;&#xA;|title_bili=&quot;+CurrentRow(4).ToString+&quot; &#xD;&#xA;|number=&quot;+CurrentRow(0).ToString+&quot;&#xD;&#xA;|episode=&quot;+CurrentRow(11).ToString+&quot;篇  &#xD;&#xA;|date_weibo=&quot;+CurrentRow(1).ToString+&quot;&#xD;&#xA;|date_bili=&quot;+CurrentRow(2).ToString+&quot;&#xD;&#xA;}}&#xD;&#xA;{{cquote|待补充|旁白}}&#xD;&#xA;'''&quot;+CurrentRow(4).ToString+&quot;'''是[[有兽焉]]漫画的第&quot;+CurrentRow(0).ToString+&quot;话。它于&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(2).ToString.Split(&quot;-&quot;)(2)+&quot;日作为付费章节在哔哩哔哩漫画发布，并于&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(0)+&quot;年&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(1)+&quot;月&quot;+CurrentRow(1).ToString.Split(&quot;-&quot;)(2)+&quot;日在微博正式发布。&#xD;&#xA;==漫画链接==&#x9;&#xD;&#xA;{{漫画链接|wblink=&quot;+CurrentRow(5).ToString+&quot;|bmlink=&quot;+CurrentRow(6).ToString+&quot;}}&#xD;&#xA;==概要==&#x9;&#xD;&#xA;===&quot;+CurrentRow(9).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;===&quot;+CurrentRow(10).ToString+&quot;===&#xD;&#xA;待补充&#xD;&#xA;==出场==&#xD;&#xA;===角色===&#xD;&#xA;{{出场角色列表|&quot;+CurrentRow(0).ToString+&quot;}}&#x9;&#xD;&#xA;===地点===&#xD;&#xA;==你知道吗？==&#xD;&#xA;===设定===&#xD;&#xA;===轶事===&#xD;&#xA;==注释==&#x9;&#xD;&#xA;{{notefoot}}&#xD;&#xA;==参考资料==&#xD;&#xA;{{reflist}}&#xD;&#xA;{{-}}&#xD;&#xA;{{漫画总导航}}&#xD;&#xA;&quot;]" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                      <ui:ReadTextFile File="{x:Null}" Content="[get_text]" DisplayName="Read Text File" FileName="[&quot;输出文档\Draft\&quot;+CurrentRow(0).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="548,82" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+                      <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="548,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[get_text]" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="548,159" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC58%E8%AF%9D&amp;action=submit" DesignTimeRectangle="820, 349, 20, 30" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl idx='7' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' class='oo-ui-iconElement-icon oo-ui-icon-link' aaname='' /&gt;" Guid="d9f52e48-ca77-490a-9a75-3559f05f5034" InformativeScreenshot="5b4127a823f05e2acf2d277f139dbb98.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/wiki/Draft:&quot;+CurrentRow(0).ToString+&quot;?action=edit&amp;amp;veswitched=1' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '取消'" sap:VirtualizedContainerService.HintSize="548,159" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC58%E8%AF%9D&amp;action=submit" CvElementArea="1411, 721, 76, 44" CvTextArea="1429, 733, 38, 20" CvTextArgument="E,i" CvType="Button" DesignTimeRectangle="1414, 724, 70, 39" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'取消'" FullSelectorArgument="&lt;webctrl aaname='取消' class='ui-button-text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='取消' class='ui-button-text' tag='SPAN' type='' check:innerText='取消' /&gt;" Guid="6bd37ea1-365f-49ef-905e-e317fe09eead" InformativeScreenshot="4c99cb6aee9d392ddff46df3264170e1.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/wiki/Draft:&quot;+CurrentRow(0).ToString+&quot;?action=edit&amp;amp;veswitched=1' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvElementArea="1411, 721, 76, 44" CvTextArea="1429, 733, 38, 20" CvTextArgument="E,i" CvType="Button" DesignTimeRectangle="1413, 723, 72, 41" ElementType="Button" FriendlyName="'取消'" FullSelectorArgument="&lt;webctrl aaname='取消' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='取消' tag='BUTTON' type='button' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' check:innerText='取消' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAtCAYAAAAEP43UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM4SURBVGhD7Zo9TypBFIZtKfhGvhEkRD6kBwRCSwL2tCr+B5AOKugogc7SPznXd8ysw+wZvAvLlZsdkyfLnDlzsvN4dlfiXn3+MIMjyKBBz/fA5/OxQqHA7u/vWb1e9zRwABdwIjv65FsWkrLZLItGoywcDnsaOIALOFGkfX2ATSRQi70MnMCNTRhMms6yAydwYxOG65ZaYAhzN0aYA4wwhxhhDjHCHGKEOcQIc4gR5pD/Qlgmk2HL5ZI9PT1ZsX6/zyaTyV4e5pGHfDkmrzuVswrDiX58fByN2DwYjUZ7sV6vxzabzZ4MVVij0WDv7+82iadw9g7DSW+3W34UMXlj6BRsvFQq7a1DjtpByJElCSFiLNcVuWqNU/l1YYiv12ubMGxUiDiEXEv97LYs8E+EoQt0lxtEQZgsFHHMo/vkWj8hC6Pm3eDXO4ySo675WxGeEIaxevmp9zVxg0dnCrHIV7tWh5uX5kUIowRSm0SeEKmu0aGrdSxaYdfX167w8PBA3sNWqxXL5/NWDu5j5XKZxzD38vJiqyWDebmGjre3Nw41dwxaYalUyhW63S7b7Xb8KGKvr698s8VikY9xxPjx8ZHMp0AN9ZegYzabkTWOQSssmUy6QqfT4QJwFLHxeMwF3d7e2mKLxYJvUMRlEBdzVA0KeY0bXIywWq3G73XoiOFwaMXVeazF+OKEJRIJV2i323yjOGKT6uUiNg1JGCO3Wq0erIMxVUsH7mFqvWPRCovH4yeDE5VPHJtEXHQH/mWFMSTgwSBu0ECuI9bgCVmpVKyxXEOHrt6xaIVRTwi3kJ9wg8HA6gLMiaekGOtiF/eUjMViZwObxd9Q8/mcy5pOp3vzd3d3vJtEvNVq8Q7EOpEjatzc3FgxFcwhR153Klph+KfluXh+frYuU3ymcnK5HN8spCEHwprNpjWPGOaRJ6+TawN13alohUUiEQOBVhj1tcBw4KtRKBQyEGiFBYNBA4FWWCAQMBAYYQ7RCvP7/QYCI8whpDC8ZYcbHLXAy8AJ+QYivtCm02lykZeBE/IdV/EWNRJMp311FlzACfkWNcAEbCIJ162XgQO4UGSBvYHhZ8iggeSK/QHuOl0FxoxppgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="548,182" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '新页面'" sap:VirtualizedContainerService.HintSize="548,159" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                        <uix:NClick.MouseButton>
+                          <InArgument x:TypeArguments="uix:NMouseButton">
+                            <Literal x:TypeArguments="uix:NMouseButton" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
+                          </InArgument>
+                        </uix:NClick.MouseButton>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:56&amp;action=edit" CvTextArea="1141, 676, 42, 14" CvTextArgument="SrDg" CvType="Text" DesignTimeRectangle="1143, 677, 38, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'新页面'" FullSelectorArgument="&lt;webctrl parentid='wpSummaryLabel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wpSummaryLabel' tag='A' type='' class='' aaname='新页面' check:text='新页面' /&gt;" Guid="3fdde489-10d6-4a87-9100-b609d64204f1" InformativeScreenshot="6667ca42edd615d5b823fdbb03c3240a.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/wiki/Draft:&quot;+CurrentRow(0).ToString+&quot;?action=edit&amp;amp;veswitched=1' /&gt;&quot;]" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '保存页面'" sap:VirtualizedContainerService.HintSize="548,159" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://youshou.wiki/wiki/Draft:50?action=edit&amp;veswitched=1" CvElementArea="309, 588, 85, 35" CvTextArea="322, 598, 59, 15" CvTextArgument="4277m1" CvType="Button" DesignTimeRectangle="311, 590, 82, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'保存页面'" FullSelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' type='submit' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' aaname='保存您的更改 [alt-shift-s]' check:text='保存页面' /&gt;" Guid="fc494bd0-6f4d-44a0-831d-2c941ca4369a" InformativeScreenshot="e760ca3dbb69e528ff486dc5a6e762c8.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/wiki/Draft:&quot;+CurrentRow(0).ToString+&quot;?action=edit&amp;amp;veswitched=1' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="596, 28, 1659, 941" BrowserType="Edge" IconBase64="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" InformativeScreenshot="bd32c115f11562fd0484c4cb54931b65.jpg" Selector="&lt;html app='msedge.exe' title='创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" Title="创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki" Url="[&quot;https://youshou.wiki/index.php?title=Draft:第&quot;+CurrentRow(0).ToString+&quot;话&amp;action=submit&quot;]" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="624,25" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="300,176" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch sap2010:Annotation.AnnotationText="通过配置表挂删除标记，同场用于删除Draft页&#xA;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="258,88" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="614,1712" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap:VirtualizedContainerService.HintSize="572,1624" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: 创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki" sap:VirtualizedContainerService.HintSize="510,1513" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V2" WindowResize="Maximize">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1294" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="get_text" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[get_text]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">{{delete|O3}}</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_3" Text="[get_text]" />
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:414&amp;action=edit" DesignTimeRectangle="362, 372, 20, 30" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl idx='7' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' class='oo-ui-iconElement-icon oo-ui-icon-link' aaname='' /&gt;" Guid="9d1956fc-4429-4305-9da9-4ed75954ae92" InformativeScreenshot="13a35ee69f28f263d3a20f3e23e2053b.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/index.php?title=Draft:&quot;+CurrentRow(0).ToString+&quot;&amp;amp;action=edit' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '取消'" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:414&amp;action=edit" CvElementArea="952, 646, 75, 44" CvTextArea="970, 658, 38, 20" CvTextArgument="E,i" CvType="Button" DesignTimeRectangle="955, 649, 70, 39" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'取消'" FullSelectorArgument="&lt;webctrl aaname='取消' class='ui-button-text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='取消' class='ui-button-text' tag='SPAN' type='' check:innerText='取消' /&gt;" Guid="f4db4cc5-963c-4b43-ba94-7b8ec7605248" InformativeScreenshot="69e9090126f81cd8bd4df8a6e006b005.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/index.php?title=Draft:&quot;+CurrentRow(0).ToString+&quot;&amp;amp;action=edit' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="952, 646, 75, 44" CvTextArea="970, 658, 38, 20" CvTextArgument="E,i" CvType="Button" DesignTimeRectangle="954, 648, 72, 41" ElementType="Button" FriendlyName="'取消'" FullSelectorArgument="&lt;webctrl aaname='取消' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='取消' tag='BUTTON' type='button' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' check:innerText='取消' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAtCAYAAAAEP43UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM4SURBVGhD7Zo9TypBFIZtKfhGvhEkRD6kBwRCSwL2tCr+B5AOKugogc7SPznXd8ysw+wZvAvLlZsdkyfLnDlzsvN4dlfiXn3+MIMjyKBBz/fA5/OxQqHA7u/vWb1e9zRwABdwIjv65FsWkrLZLItGoywcDnsaOIALOFGkfX2ATSRQi70MnMCNTRhMms6yAydwYxOG65ZaYAhzN0aYA4wwhxhhDjHCHGKEOcQIc4gR5pD/Qlgmk2HL5ZI9PT1ZsX6/zyaTyV4e5pGHfDkmrzuVswrDiX58fByN2DwYjUZ7sV6vxzabzZ4MVVij0WDv7+82iadw9g7DSW+3W34UMXlj6BRsvFQq7a1DjtpByJElCSFiLNcVuWqNU/l1YYiv12ubMGxUiDiEXEv97LYs8E+EoQt0lxtEQZgsFHHMo/vkWj8hC6Pm3eDXO4ySo675WxGeEIaxevmp9zVxg0dnCrHIV7tWh5uX5kUIowRSm0SeEKmu0aGrdSxaYdfX167w8PBA3sNWqxXL5/NWDu5j5XKZxzD38vJiqyWDebmGjre3Nw41dwxaYalUyhW63S7b7Xb8KGKvr698s8VikY9xxPjx8ZHMp0AN9ZegYzabkTWOQSssmUy6QqfT4QJwFLHxeMwF3d7e2mKLxYJvUMRlEBdzVA0KeY0bXIywWq3G73XoiOFwaMXVeazF+OKEJRIJV2i323yjOGKT6uUiNg1JGCO3Wq0erIMxVUsH7mFqvWPRCovH4yeDE5VPHJtEXHQH/mWFMSTgwSBu0ECuI9bgCVmpVKyxXEOHrt6xaIVRTwi3kJ9wg8HA6gLMiaekGOtiF/eUjMViZwObxd9Q8/mcy5pOp3vzd3d3vJtEvNVq8Q7EOpEjatzc3FgxFcwhR153Klph+KfluXh+frYuU3ymcnK5HN8spCEHwprNpjWPGOaRJ6+TawN13alohUUiEQOBVhj1tcBw4KtRKBQyEGiFBYNBA4FWWCAQMBAYYQ7RCvP7/QYCI8whpDC8ZYcbHLXAy8AJ+QYivtCm02lykZeBE/IdV/EWNRJMp311FlzACfkWNcAEbCIJ162XgQO4UGSBvYHhZ8iggeSK/QHuOl0FxoxppgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '修正代码'" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:414&amp;action=edit" CvTextArea="1208, 288, 54, 15" CvTextArgument="#S1EfCAS" CvType="Text" DesignTimeRectangle="1211, 290, 50, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'修正代码'" FullSelectorArgument="&lt;webctrl aaname='修正代码' parentid='wpSummaryLabel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='修正代码' parentid='wpSummaryLabel' tag='A' type='' class='' check:innerText='修正代码' /&gt;" Guid="2fd42efe-3522-4a9c-8039-77e7663c45ad" InformativeScreenshot="4b67581012a4800dfbe2421dec3d0f7e.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/index.php?title=Draft:&quot;+CurrentRow(0).ToString+&quot;&amp;amp;action=edit' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '保存更改'" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa05c937-8d93-46ec-a2a9-0fdd5086ee74" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:414&amp;action=edit" CvElementArea="309, 548, 85, 35" CvTextArea="322, 558, 60, 15" CvTextArgument="4277H1" CvType="Button" DesignTimeRectangle="311, 550, 82, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'保存更改'" FullSelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' type='submit' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' aaname='保存您的更改 [alt-shift-s]' check:text='保存更改' /&gt;" Guid="887f4b95-35d3-4911-993e-ba75c6018ded" InformativeScreenshot="dd77af5331861bd50883dc4418d6398d.png" ScopeSelectorArgument="[&quot;&lt;html app='msedge.exe' url='https://youshou.wiki/index.php?title=Draft:&quot;+CurrentRow(0).ToString+&quot;&amp;amp;action=edit' /&gt;&quot;]" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="596, 28, 1659, 941" BrowserType="Edge" IconBase64="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" InformativeScreenshot="bd32c115f11562fd0484c4cb54931b65.jpg" Selector="&lt;html app='msedge.exe' title='创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" Title="创建“Draft:第51话” - 有兽档案馆，开放的有兽焉wiki" Url="[&quot;https://youshou.wiki/index.php?title=Draft:&quot;+CurrentRow(0).ToString+&quot;&amp;action=edit&quot;]" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="618,23" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+    </Sequence>
+  </Sequence>
+</Activity>
