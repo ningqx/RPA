@@ -1,0 +1,92 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "get_b_url&Sequence_2",
+        "get_b_url_UiElelment&Sequence_1",
+        "get_w_date&Sequence_2",
+        "get_date_UiElement&Sequence_2",
+        "str_index&Sequence_2",
+        "get_b_index&Sequence_21",
+        "get_Hex&Sequence_2",
+        "get_UiElement&Sequence_2",
+        "get_Url&Sequence_2",
+        "dt_cofig&Sequence_2",
+        "dt_data&Sequence_2",
+        "int_end&Sequence_1",
+        "int_begin&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "database&Sequence_5",
+        "dt_3&Sequence_5",
+        "dt_2&Sequence_5",
+        "dt_1&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "导入.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "get_text&Sequence_8",
+        "dt_read&Sequence_2",
+        "get_text&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "古诗词引用.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "get_sons1&Sequence_2",
+        "get_match&Sequence_2",
+        "get_match_col&Sequence_2",
+        "datarow&Sequence_3",
+        "get_UiElement&Sequence_5",
+        "is_match&Sequence_18",
+        "get_sons2&Sequence_8",
+        "is_match&Sequence_23",
+        "is_matching&Sequence_6",
+        "is_match&Sequence_22",
+        "is_match&Sequence_5",
+        "get_chaodai&Sequence_1",
+        "get_author&Sequence_1",
+        "get_title&Sequence_1",
+        "dt_perom&Sequence_2",
+        "dt_Data&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "页面代码生成.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
