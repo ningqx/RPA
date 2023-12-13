@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="统计角色缺失页" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1871,1181" sap2010:WorkflowViewState.IdRef="统计角色缺失页_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="统计角色缺失页" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1871,2337" sap2010:WorkflowViewState.IdRef="统计角色缺失页_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +38,8 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -100,66 +102,257 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="统计角色缺失页" sap:VirtualizedContainerService.HintSize="628,1116" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="统计角色缺失页" sap:VirtualizedContainerService.HintSize="766,2272" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: 分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki" sap:VirtualizedContainerService.HintSize="586,1028" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="7419ca53-9c2e-44aa-af76-6b7a8992e757" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,809" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
-            </Sequence.Variables>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724,25" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="300,113" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: 分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki" sap:VirtualizedContainerService.HintSize="258,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="7419ca53-9c2e-44aa-af76-6b7a8992e757" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,809" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='存在角色' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7419ca53-9c2e-44aa-af76-6b7a8992e757" Version="V3">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Category:%E5%87%BA%E5%9C%BA%E8%A7%92%E8%89%B2%E4%BF%A1%E6%81%AF%E9%A1%B5" CvTextArea="160, 513, 64, 20" CvTextArgument="(F-L)" CvType="Text" DesignTimeRectangle="169, 511, 48, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'下一页'" FullSelectorArgument="&lt;webctrl aaname='下一页' omit:parentid='mw-pages' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mw-pages' tag='A' type='' class='' aaname='下一页' check:innerText='下一页' /&gt;" Guid="38eaf6dd-9043-4aa3-a884-3ebc3d4f6b18" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="93, 540, 1337, 2331" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='mw-pages' tag='UL' /&gt;" Guid="8cdfa844-eb75-413d-a840-a0244348de16" InformativeScreenshot="67550d94f799a74413c2db011dcd674a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,362" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(0)]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Object">[cint(CurrentRow(0).ToString.Split("第")(1).Split("话")(0))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="输出文档\角色统计信息\已存在话数.xlsx" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="55, 85, 1560, 1090" BrowserType="Edge" IconBase64="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" InformativeScreenshot="97e7d6eb0f20c7d7f42a195f7ba70a2e.jpg" Selector="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" Title="分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki" Url="https://youshou.wiki/wiki/Category:%E5%87%BA%E5%9C%BA%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8" />
+            </uix:NApplicationCard.TargetApp>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='存在角色' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7419ca53-9c2e-44aa-af76-6b7a8992e757" Version="V3">
-              <uix:NExtractData.NextLink>
-                <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Category:%E5%87%BA%E5%9C%BA%E8%A7%92%E8%89%B2%E4%BF%A1%E6%81%AF%E9%A1%B5" CvTextArea="160, 513, 64, 20" CvTextArgument="(F-L)" CvType="Text" DesignTimeRectangle="169, 511, 48, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'下一页'" FullSelectorArgument="&lt;webctrl aaname='下一页' omit:parentid='mw-pages' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mw-pages' tag='A' type='' class='' aaname='下一页' check:innerText='下一页' /&gt;" Guid="38eaf6dd-9043-4aa3-a884-3ebc3d4f6b18" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-              </uix:NExtractData.NextLink>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="93, 540, 1337, 2331" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='mw-pages' tag='UL' /&gt;" Guid="8cdfa844-eb75-413d-a840-a0244348de16" InformativeScreenshot="67550d94f799a74413c2db011dcd674a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,362" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-              <ui:ForEachRow.Body>
-                <ActivityAction x:TypeArguments="sd:DataRow">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <Sequence sap:VirtualizedContainerService.HintSize="724,2119" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_in" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_out" />
+        <Variable x:TypeArguments="x:Int32" Name="index" />
+        <Variable x:TypeArguments="sd:DataRow" Name="datarow" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange AddHeaders="True" DataTable="[dt_in]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="输出文档\角色统计信息\已存在话数.xlsx">
+        <ui:ReadRange.Range>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:ReadRange.Range>
+      </ui:ReadRange>
+      <ui:BuildDataTable DataTable="[dt_out]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;话数&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+      <Assign sap:VirtualizedContainerService.HintSize="662,84" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">[cint(dt_in.Rows(0).ItemArray(0).ToString)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_in]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,1500" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,1310" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[index=1]" sap:VirtualizedContainerService.HintSize="586,1222" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:Object">[CurrentRow(0)]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:Object">[cint(CurrentRow(0).ToString.Split("第")(1).Split("话")(0))]</InArgument>
+                        <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
                       </Assign.Value>
                     </Assign>
                   </Sequence>
-                </ActivityAction>
-              </ui:ForEachRow.Body>
-            </ui:ForEachRow>
-            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="输出文档\角色统计信息\已存在话数.xlsx" />
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="55, 85, 1560, 1090" BrowserType="Edge" IconBase64="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" InformativeScreenshot="97e7d6eb0f20c7d7f42a195f7ba70a2e.jpg" Selector="&lt;html app='msedge.exe' title='分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki' /&gt;" Title="分类:出场角色信息页 - 有兽档案馆，开放的有兽焉wiki" Url="https://youshou.wiki/wiki/Category:%E5%87%BA%E5%9C%BA%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="552,866" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[cint(CurrentRow(0).ToString)=index]" sap:VirtualizedContainerService.HintSize="510,778" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,357" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(0).ToString]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,237" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                            <ui:InterruptibleWhile.Body>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,652" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="sd:DataRow">[datarow]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="sd:DataRow">[dt_out.NewRow]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[datarow(0)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[index]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[datarow]" DataTable="[dt_out]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,192" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ui:InterruptibleWhile.Body>
+                            <ui:InterruptibleWhile.Condition>
+                              <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not cint(CurrentRow(0).ToString)=index" />
+                            </ui:InterruptibleWhile.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:InterruptibleWhile>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+      <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_out]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="输出文档\角色统计信息\缺失话数.xlsx" />
+    </Sequence>
   </Sequence>
 </Activity>
