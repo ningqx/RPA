@@ -92,7 +92,22 @@
       "Path": "统计角色缺失页.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "datarow&Sequence_5",
+        "index&Sequence_5",
+        "dt_out&Sequence_5",
+        "dt_in&Sequence_5",
         "ExtractDataTable&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "获取已有章节的角色信息.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
+        "dt_in&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
