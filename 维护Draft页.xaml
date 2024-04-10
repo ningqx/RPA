@@ -1,0 +1,266 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="维护Draft页" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="658,1368" sap2010:WorkflowViewState.IdRef="维护Draft页_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="维护Draft页" sap:VirtualizedContainerService.HintSize="668,1303" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="626,124" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">120</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="626,1114" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,975" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: Draft:第35话 - 有兽档案馆，开放的有兽焉wiki" sap:VirtualizedContainerService.HintSize="530,783" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3f918710-82f5-4ff6-b594-c6d5a9874953" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,524" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="get_text" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="454,340" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="416,62" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f918710-82f5-4ff6-b594-c6d5a9874953" Timeout="3" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC35%E8%AF%9D&amp;action=edit" DesignTimeRectangle="183, 381, 20, 30" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl idx='7' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='wikiEditor-section-main' tag='SPAN' class='oo-ui-iconElement-icon oo-ui-icon-link' aaname='' /&gt;" Guid="45f3e02c-c0d5-4c0f-bbc0-06b7dc2ac06e" InformativeScreenshot="3bda15fbb22531428f8564fa73fd9f47.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='编辑“Draft:第35话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'close'" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f918710-82f5-4ff6-b594-c6d5a9874953" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC35%E8%AF%9D&amp;action=edit" CvElementArea="835, 411, 20, 19" CvType="CloseButton" DesignTimeRectangle="837, 412, 16, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'close'" FullSelectorArgument="&lt;webctrl aaname='close' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='close' tag='SPAN' type='' class='ui-icon ui-icon-closethick' check:innerText='close' /&gt;" Guid="d322ad18-b43b-4861-b6e5-d5518391ba30" InformativeScreenshot="d909992ebbbc630b380794bb8372bd51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='编辑“Draft:第35话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text '{{漫画页顶}}{{漫画信息框 color=#…'" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="3f918710-82f5-4ff6-b594-c6d5a9874953" TextString="[get_text]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC35%E8%AF%9D&amp;action=edit" DesignTimeRectangle="112, 461, 500, 600" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'{{漫画页顶}}{{漫画信息框 color=#…'" FullSelectorArgument="&lt;webctrl id='wpTextbox1' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wpTextbox1' tag='TEXTAREA' type='' class='mw-editfont-monospace ext-WikiEditor-realtimepreview-textbox' aaname='' /&gt;" Guid="64087999-de5c-4809-a89f-ffc9c7422cc0" ImageBase64="" InformativeScreenshot="a54a51cc92dcc0bdb90c17f67b563c73.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='编辑“Draft:第35话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="450,746" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\ProgramData\Miniconda3\envs\my_test" TargetPlatform="x64">
+                          <p:PythonScope.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,669" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="p:PythonObject" Name="get_pyobject" />
+                                  <Variable x:TypeArguments="p:PythonObject" Name="result_obj" />
+                                  <Variable x:TypeArguments="x:String" Name="get_output" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="374,100" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[get_pyobject]" ScriptFile="Python\regex.py" />
+                                <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="374,122" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[get_pyobject]" Name="get_text" Parameters="[{get_text}]" Result="[result_obj]" />
+                                <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="374,122" sap2010:WorkflowViewState.IdRef="GetObject`1_2" PythonObject="[result_obj]" Result="[get_output]" />
+                                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;输出文档\Draft_bak\&quot;+index.ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="374,177" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[get_output]" />
+                                <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="374,83" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[get_output]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </p:PythonScope.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </p:PythonScope>
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="450,222" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '保存更改'" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f918710-82f5-4ff6-b594-c6d5a9874953" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://youshou.wiki/index.php?title=Draft:%E7%AC%AC35%E8%AF%9D&amp;action=edit" CvElementArea="130, 962, 86, 36" CvTextArea="143, 970, 59, 17" CvTextArgument="RFF8" CvType="Button" DesignTimeRectangle="132, 963, 82, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'保存更改'" FullSelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wpSave' tag='INPUT' type='submit' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' aaname='保存您的更改 [alt-shift-s]' check:text='保存更改' /&gt;" Guid="a8528af0-0e0b-4932-be5b-332b8dc056cf" InformativeScreenshot="9d0464519ebc2c42265c8ccbdf36d644.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='编辑“Draft:第35话” - 有兽档案馆，开放的有兽焉wiki' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="420,24" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="454,117" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="172, 14, 1294, 1087" BrowserType="Edge" IconBase64="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" InformativeScreenshot="27008317cd2e2e62011d526cef419b5e.jpg" Selector="&lt;html app='msedge.exe' url='https://youshou.wiki/index.php?title=Draft:%E7%AC%AC35%E8%AF%9D&amp;amp;action=edit' /&gt;" Title="Draft:第35话 - 有兽档案馆，开放的有兽焉wiki" Url="[&quot;https://youshou.wiki/index.php?title=Draft:第&quot;+index.ToString+&quot;话&amp;action=edit&quot;]" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <Assign sap:VirtualizedContainerService.HintSize="530,107" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="index&lt;756" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
+  </Sequence>
+</Activity>

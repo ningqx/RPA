@@ -2,6 +2,38 @@
   "Packages": [
     {
       "Package": {
+        "Id": "UiPath.Database.Activities",
+        "Version": "1.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.3.0\\lib/netstandard2.0/Azure.Identity.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.data.sqlclient\\4.1.0\\runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.16.5\\lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.1\\lib/netstandard2.1/Oracle.ManagedDataAccess.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.data.odbc\\5.0.0\\runtimes/win/lib/netcoreapp2.0/System.Data.Odbc.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.data.oledb\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Data.OleDb.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.directoryservices.protocols\\5.0.0\\runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Data.ConnectionUI.Dialog.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.Activities.Design.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.Activities.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll"
+      ],
+      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.22.2"
       },
@@ -111,8 +143,6 @@
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.powershell.commands.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -236,35 +266,15 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Database.Activities",
-        "Version": "1.7.1"
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.6.0"
       },
       "Assemblies": [
-        "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.3.0\\lib/netstandard2.0/Azure.Identity.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.data.sqlclient\\4.1.0\\runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.16.5\\lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.1\\lib/netstandard2.1/Oracle.ManagedDataAccess.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.data.odbc\\5.0.0\\runtimes/win/lib/netcoreapp2.0/System.Data.Odbc.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.data.oledb\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Data.OleDb.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.directoryservices.protocols\\5.0.0\\runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.Protocols.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Data.ConnectionUI.Dialog.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.Activities.Design.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.Activities.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll"
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.dll"
       ],
-      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\uipath.database.activities\\1.7.1"
+      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0"
     }
   ],
   "Conflicts": [],
@@ -4661,6 +4671,11 @@
         }
       ]
     },
+    "UiPath.Python.Activities": {
+      "Id": "UiPath.Python.Activities",
+      "Version": "1.6.0",
+      "Dependencies": []
+    },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
       "Version": "23.10.2",
@@ -5521,10 +5536,7 @@
         "Id": "Microsoft.Management.Infrastructure.Runtime.Win",
         "Version": "2.0.0"
       },
-      "Assemblies": [
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.dll"
-      ],
+      "Assemblies": [],
       "Path": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0"
     },
     {
@@ -6307,24 +6319,6 @@
         "C:\\Users\\Administrator\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtimes\\win\\lib\\netstandard1.5\\System.Runtime.Extensions.dll"
       ],
       "Path": "C:\\Users\\Administrator\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "runtime.win7-x64.runtime.native.System.IO.Compression",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "runtime.win7.System.Private.Uri",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Administrator\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtimes\\win\\lib\\netstandard1.0\\System.Private.Uri.dll"
-      ],
-      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0"
     },
     {
       "Package": {
@@ -7587,6 +7581,18 @@
         "C:\\Users\\Administrator\\.nuget\\packages\\uipath.platform\\23.10.0\\lib\\net6.0-windows7.0\\UiPath.Platform.dll"
       ],
       "Path": "C:\\Users\\Administrator\\.nuget\\packages\\uipath.platform\\23.10.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.6.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib\\net5.0-windows7.0\\UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib\\net5.0-windows7.0\\UiPath.Python.Activities.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib\\net5.0-windows7.0\\UiPath.Python.dll"
+      ],
+      "Path": "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities\\1.6.0"
     },
     {
       "Package": {
